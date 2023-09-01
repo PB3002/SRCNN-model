@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .image_showing{
+                display: flex;
+            }
+            .card1,.card2,.card3{
+                padding-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="{{ url_for('helloworld') }}">Go to Home Page</a>
+        <div class="image_showing">
+            <div class="card1">
+                <img src="{{ input_img_url }}" alt="Input image" width="256" height="256">
+                <p>Lowres</p>
+            </div>
+            <div class="card2"> <img src="{{ predicted_img_url }}" alt="Predicted image" width="256" height="256"><p>Predict</p></div>
+            <div class="card3"><img src="{{ or_img_url }}" alt="Predicted image" width="256" height="256"><p>Original</p></div>
+           
+            
+        </div>
+
+    </body>
+</html>

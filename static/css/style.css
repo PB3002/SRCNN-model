@@ -1,0 +1,99 @@
+body{
+    min-height: 100vh;
+    background-color: #111111;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: 'Poppins';
+    
+}
+
+h1{
+    color: aqua;
+    
+}
+
+h2{
+    color: white;
+    margin-bottom: 1px;
+}
+
+.extension{
+    margin-top: 0;
+}
+
+.card{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    box-shadow: 0 0px 200px -80px black;
+    border-radius: 13px;
+    width: 30rem;
+    height: 30rem;
+    align-items: center;
+}
+
+.card button{
+    font-size: 25px ;
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    padding:  16px 10vw 16px 10vw;
+    border-radius: 13px;
+    background: #7d2ae8;
+    transition: all 0.2s ease;
+    border: 0;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: box-shadow,transform;
+    transition-property: box-shadow,transform;
+}
+
+.card button:hover{
+   cursor: pointer;
+   box-shadow: 0 0 20px rgba(0,0,0,0.5);
+   -webkit-transform: scale(1.05);
+   transform: scale(1.05);
+}
+.card button:active{
+    transform: scale(0.96);
+}
+
+.card form{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+}
+
+.card form input{
+    display: none;
+}
+
+.card form label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    height: 3rem;
+    width: 90%;
+    border: 1px dashed white;
+    border-radius: 13px;
+    transition: all 0.1s ease;
+    background-color: #282828;
+}
+
+.card form label:hover {
+    cursor: pointer;
+    color: #7d2ae8;
+    border: 1px dashed #7d2ae8;
+}
+
+.card .upload p{
+    margin-top: 30px;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>File demo</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        </style>
+        <!-- xóa sau khi làm xong UI -->
+        <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+        
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    </head>
+    <body>
+       <div class="title"><h1>Image Enhacement using CNN</h1></div>
+        <div class="card">
+
+            <h2>Upload your images</h2>
+            <p class="extension">in JPG, JPEG, PNG or GIF. </p>
+            <form class="upload" action="/" method="post" enctype="multipart/form-data">
+                
+                <Button>Predict</Button>
+
+                <p>Choose imgage to enhance</p>
+                <input type="file" id="lowres_upload" name="lowres_upload"/>
+                <label for="lowres_upload" id="lowres_name">No file chosen</label>
+
+                <p>Choose original to compare (*not compulsory)</p>
+                <input type="file" id="ori_upload" name="ori_upload"/>
+                <label for="ori_upload" id="ori_name">No file chosen</label>
+            </form>
+            
+        </div>
+        
+        <!-- <script src="../static/script/scripts.js"></script> -->
+        <script type="text/javascript" src="{{url_for('static',filename='script/scripts.js')}}"></script>
+    </body>
+</html>

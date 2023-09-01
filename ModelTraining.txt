@@ -1,0 +1,9 @@
+Source code train model tại đây:
+https://colab.research.google.com/drive/12AHsH9V1d6IFrfzutsm02Mk1lOMske3E?usp=sharing
+
+
+Download T91 data tại đây: 
+https://www.kaggle.com/datasets/ll01dm/t91-image-dataset
+
+Download T91 data tại đây: 
+https://www.kaggle.com/datasets/bluesky314/general100
